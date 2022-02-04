@@ -11,7 +11,7 @@
         android:id="@+id/cost_of_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Cost of service"
+        android:hint="@string/cost_of_service"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +20,7 @@
         android:id="@+id/service_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How was the service?"
+        android:text="@string/service_question"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cost_of_service" />
 
@@ -37,26 +37,26 @@
             android:id="@+id/option_twenty_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Amazing (20%)" />
+            android:text="@string/option_twenty_percent" />
 
         <RadioButton
             android:id="@+id/option_eighteen_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Good (18%)" />
+            android:text="@string/options_eighteen_percent" />
 
         <RadioButton
             android:id="@+id/option_fifteen_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ok (15%)" />
+            android:text="@string/option_fifteen_percent" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/round_trip_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Round Trip?"
+        android:text="@string/round_trip"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tips_options" />
 
@@ -72,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/round_trip_option"
         android:id="@+id/calculate_button"
-        android:text="Calculate"
+        android:text="@string/calculate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"/>
     <TextView
@@ -81,6 +81,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/calculate_button"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Total tips"
+        android:text="@string/total_tips"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -56,31 +56,32 @@
         android:id="@+id/round_trip_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/round_trip"
+        android:text="@string/round_tip"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tips_options" />
 
     <Switch
-        android:checked="true"
         android:id="@+id/round_trip_option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tips_options" />
+
     <Button
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/round_trip_option"
         android:id="@+id/calculate_button"
-        android:text="@string/calculate"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/round_trip_option" />
+
     <TextView
         android:id="@+id/tip_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/calculate_button"
-        app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/total_tips"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculate_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

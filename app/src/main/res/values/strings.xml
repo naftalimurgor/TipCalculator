@@ -7,5 +7,5 @@
     <string name="option_fifteen_percent">Ok (15%)</string>
     <string name="calculate">Calculate</string>
     <string name="total_tips">Total tips</string>
-    <string name="round_trip">Round Trip?</string>
+    <string name="round_tip">Round Tip?</string>
 </resources>
